@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:id="@+id/login_background"
+    android:background="@drawable/login_screen"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/register_ctn"
+        android:layout_width="395dp"
+        android:layout_height="591dp"
+        android:background="@drawable/ctn_register_background"
+        android:clipToPadding="false"
+        android:padding="@dimen/margin_base_x4"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/htLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/strname"
+            android:textColorHint="@color/gray"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="@id/register_ctn"
+            app:layout_constraintTop_toTopOf="@+id/register_ctn">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtActToken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:drawableEnd="@drawable/account_circle_24px"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintTop_toTopOf="@+id/register_ctn" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_base"
+            android:hint="@string/strphone"
+            android:textColorHint="@color/gray"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="@id/register_ctn"
+            app:layout_constraintTop_toBottomOf="@+id/htLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PhoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:drawableEnd="@drawable/perm_phone_msg_24px_outlined"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintTop_toTopOf="@+id/phoneLayout" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/descriptLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_base"
+            android:hint="@string/strdescript"
+            android:textColorHint="@color/gray"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="@id/register_ctn"
+            app:layout_constraintTop_toBottomOf="@+id/phoneLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/DescriptText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:drawableEnd="@drawable/message_24px_outlined"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintTop_toTopOf="@+id/descriptLayout" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/genderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_base"
+            android:hint="@string/strgender"
+            android:textColorHint="@color/gray"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="@id/register_ctn"
+            app:layout_constraintTop_toBottomOf="@+id/descriptLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/GenderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:drawableEnd="@drawable/accessibility_24px_outlined"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintTop_toTopOf="@+id/descriptLayout" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_base"
+            android:hint="@string/straddress"
+            android:textColorHint="@color/gray"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="@id/register_ctn"
+            app:layout_constraintTop_toBottomOf="@+id/genderLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AddressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:drawableEnd="@drawable/store_24px_outlined"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintTop_toTopOf="@+id/addressLayout" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_base"
+            android:hint="@string/strmail"
+            android:textColorHint="@color/gray"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="@id/register_ctn"
+            app:layout_constraintTop_toBottomOf="@+id/addressLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EmailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:drawableEnd="@drawable/contact_mail_24px_outlined"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintTop_toTopOf="@+id/emailLayout" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_base"
+            android:hint="@string/strpass"
+            android:textColorHint="@color/gray"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="@id/register_ctn"
+            app:layout_constraintTop_toBottomOf="@+id/emailLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PassText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:drawableEnd="@drawable/visibility_24px_outlined"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintTop_toTopOf="@+id/passLayout" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cfpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_base"
+            android:hint="@string/strcfpass"
+            android:textColorHint="@color/gray"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="@id/register_ctn"
+            app:layout_constraintTop_toBottomOf="@+id/passLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/CfpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:drawableEnd="@drawable/visibility_24px_outlined"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                app:layout_constraintTop_toTopOf="@+id/cfpLayout" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/LoginBackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_base_x4"
+            android:text="@string/LoginBacktext"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cfpLayout" />
+
+        <TextView
+            android:id="@+id/forgot_password_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_base"
+            android:layout_marginBottom="@dimen/margin_base_x4"
+            android:text="@string/forgot_password_text"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="@id/register_ctn"
+            app:layout_constraintRight_toRightOf="@id/register_ctn"
+            app:layout_constraintTop_toBottomOf="@+id/LoginBackText" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_button"
+            android:clickable="true"
+            android:elevation="@dimen/elevation_fragment"
+            android:focusable="true"
+            android:text="@string/register_text"
+            android:textColor="@color/colorBtnText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

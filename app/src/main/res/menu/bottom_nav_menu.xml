@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/feature_icon"
+        android:icon="@drawable/feature_24px_outlined"
+        android:title="@string/ic_feature_text"/>
+
+    <item
+        android:id="@+id/search_icon"
+        android:icon="@drawable/search_24px_outlined"
+        android:title="@string/ic_search_text"/>
+
+    <item
+        android:id="@+id/course_icon"
+        android:icon="@drawable/course_24px_outlined"
+        android:title="@string/ic_courses_text"/>
+
+    <item
+        android:id="@+id/cart_icon"
+        android:icon="@drawable/cart_24px_outlined"
+        android:title="@string/ic_cart_text"/>
+
+    <item
+        android:id="@+id/account_icon"
+        android:icon="@drawable/account_circle_24px_outlined"
+        android:title="@string/ic_account_text" />
+
+</menu>

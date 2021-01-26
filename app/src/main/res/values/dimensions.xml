@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_base">5dp</dimen>
+    <dimen name="margin_base_x2">10dp</dimen>
+    <dimen name="margin_base_x3">10dp</dimen>
+    <dimen name="margin_base_x4">10dp</dimen>
+    <dimen name="margin_base_x5">10dp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="corner_radius">10dp</dimen>
+
+    <!-- For Fragments -->
+    <dimen name="margin_fragment">30dp</dimen>
+    <dimen name="elevation_fragment">10dp</dimen>
+    <dimen name="elevation_item">20dp</dimen>
+
+    <!--Activity Account Info font size-->
+    <dimen name="edit_text_size">20sp</dimen>
+    <dimen name="edit_text_title">14sp</dimen>
+</resources>
